@@ -71,6 +71,9 @@ Weights reflect ecological relevance of predictors.
 ## Final Suitability Map
 ![Habitat Suitability Map](maps/Habitat_Suitability_Map_Dipodomys_merriami_2026.png)
 
+
+---
+##  **Download the final release of the habitat-suitability-modelling-arid-species project:** [Habitat Suitability Model v1.0 — Reproducible GIS Workflow](https://github.com/Ankanhalder2000/habitat-suitability-modelling-arid-species/releases/tag/v1.0)
 ---
 
 ## Output Files
