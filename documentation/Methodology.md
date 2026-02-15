@@ -1,8 +1,8 @@
-\# Methodology
+# Methodology
 
 
 
-\## 1. Study Objective
+## 1. Study Objective
 
 The objective of this study was to generate a raster-based Habitat Suitability Map for environmental conditions influencing species distribution within the semi-arid Rajasthan–Gujarat region of India using geospatial environmental predictors representing climate, topography, and land cover.
 
@@ -12,7 +12,7 @@ The objective of this study was to generate a raster-based Habitat Suitability M
 
 
 
-\## 2. Study Area Definition
+## 2. Study Area Definition
 
 A polygon representing the study region was defined as the Region of Interest (ROI). All spatial datasets were clipped to this boundary to ensure spatial consistency and eliminate extraneous geographic areas.
 
@@ -22,7 +22,7 @@ All datasets were processed in the coordinate reference system:
 
 
 
-\*\*EPSG:4326 — WGS84 Geographic Coordinate System\*\*
+**EPSG:4326 — WGS84 Geographic Coordinate System**
 
 
 
@@ -30,7 +30,7 @@ All datasets were processed in the coordinate reference system:
 
 
 
-\## 3. Environmental Variables
+## 3. Environmental Variables
 
 
 
@@ -38,31 +38,31 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-\### Climate Variables (WorldClim Version 1 — accessed via Google Earth Engine)
+### Climate Variables (WorldClim Version 1 — accessed via Google Earth Engine)
 
 
 
-\- \*\*BIO1\_AnnualMeanTemp\_WorldClim.tif\*\* — Annual Mean Temperature  
+- **BIO1\_AnnualMeanTemp\_WorldClim.tif** — Annual Mean Temperature  
 
-\- \*\*BIO12\_AnnualPrecip\_WorldClim.tif\*\* — Annual Precipitation  
+- **BIO12\_AnnualPrecip\_WorldClim.tif** — Annual Precipitation  
 
-\- \*\*BIO15\_PrecipSeasonality\_WorldClim.tif\*\* — Precipitation Seasonality  
-
-
-
-\### Topographic Variable
+- **BIO15\_PrecipSeasonality\_WorldClim.tif** — Precipitation Seasonality  
 
 
 
-\- \*\*Elevation\_SRTM.tif\*\* — Digital Elevation Model (SRTM)
+### Topographic Variable
 
 
 
-\### Land Cover Variable
+- **Elevation\_SRTM.tif** — Digital Elevation Model (SRTM)
 
 
 
-\- \*\*LandCover\_MODIS\_2021.tif\*\* — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
+### Land Cover Variable
+
+
+
+- **LandCover\_MODIS\_2021.tif** — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
 
 
 
@@ -70,7 +70,7 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-\## 4. Data Acquisition using Google Earth Engine (GEE)
+## 4. Data Acquisition using Google Earth Engine (GEE)
 
 
 
@@ -78,41 +78,41 @@ Environmental datasets were accessed and exported using Google Earth Engine.
 
 
 
-\*\*Processing steps performed in GEE:\*\*
+**Processing steps performed in GEE:**
 
 
 
-1\. Imported ROI boundary
+1. Imported ROI boundary
 
-2\. Loaded environmental datasets
+2. Loaded environmental datasets
 
-3\. Selected required bands
+3. Selected required bands
 
-4\. Clipped datasets to ROI
+4. Clipped datasets to ROI
 
-5\. Exported rasters to Google Drive
+5. Exported rasters to Google Drive
 
-6\. Export format: GeoTIFF
+6. Export format: GeoTIFF
 
-7\. CRS specified as EPSG:4326
+7. CRS specified as EPSG:4326
 
-8\. Resolution preserved according to source dataset
-
-
-
-\*\*Exported rasters:\*\*
+8. Resolution preserved according to source dataset
 
 
 
-\- BIO1\_AnnualMeanTemp\_WorldClim.tif  
+**Exported rasters:**
 
-\- BIO1s2\_AnnualPrecip\_WorldClim.tif  
 
-\- BIO15\_PrecipSeasonality\_WorldClim.tif  
 
-\- Elevation\_SRTM.tif  
+- BIO1\_AnnualMeanTemp\_WorldClim.tif  
 
-\- LandCover\_MODIS\_2021.tif  
+- BIO1s2\_AnnualPrecip\_WorldClim.tif  
+
+- BIO15\_PrecipSeasonality\_WorldClim.tif  
+
+- Elevation\_SRTM.tif  
+
+- LandCover\_MODIS\_2021.tif  
 
 
 
@@ -120,7 +120,7 @@ Environmental datasets were accessed and exported using Google Earth Engine.
 
 
 
-\## 5. Data Pre-Processing in QGIS
+## 5. Data Pre-Processing in QGIS
 
 
 
@@ -128,23 +128,23 @@ All rasters were imported into QGIS for preprocessing.
 
 
 
-\*\*Processing operations:\*\*
+**Processing operations:**
 
 
 
-\- Verified CRS consistency across layers
+- Verified CRS consistency across layers
 
-\- Clipped rasters to study area polygon
+- Clipped rasters to study area polygon
 
-\- Aligned rasters to identical extent and grid
+- Aligned rasters to identical extent and grid
 
-\- Ensured pixel-to-pixel correspondence
+- Ensured pixel-to-pixel correspondence
 
-\- Matched resolution across datasets
+- Matched resolution across datasets
 
 
 
-Raster alignment was performed using the \*\*Align Raster Tool\*\*.
+Raster alignment was performed using the **Align Raster Tool**.
 
 
 
@@ -152,7 +152,7 @@ Raster alignment was performed using the \*\*Align Raster Tool\*\*.
 
 
 
-\## 6. Suitability Scoring of Environmental Variables
+## 6. Suitability Scoring of Environmental Variables
 
 
 
@@ -160,7 +160,7 @@ Each environmental raster was transformed into a suitability score raster using 
 
 
 
-Suitability scores ranged from \*\*1–5\*\*, where:
+Suitability scores ranged from **1–5**, where:
 
 
 
@@ -180,19 +180,19 @@ Thresholds were defined manually using ecological reasoning based on environment
 
 
 
-\*\*Generated suitability rasters:\*\*
+**Generated suitability rasters:**
 
 
 
-\- BIO1\_suitability.tif  
+- BIO1\_suitability.tif  
 
-\- BIO12\_suitability.tif  
+- BIO12\_suitability.tif  
 
-\- BIO15\_suitability.tif  
+- BIO15\_suitability.tif  
 
-\- Elevation\_suitability.tif  
+- Elevation\_suitability.tif  
 
-\- LandCover\_suitability.tif  
+- LandCover\_suitability.tif  
 
 
 
@@ -200,7 +200,7 @@ Thresholds were defined manually using ecological reasoning based on environment
 
 
 
-\## 7. Weighted Multi-Criteria Habitat Suitability Model
+## 7. Weighted Multi-Criteria Habitat Suitability Model
 
 
 
@@ -208,7 +208,7 @@ A weighted multi-criteria evaluation (MCE) approach was applied to integrate env
 
 
 
-\*\*Habitat Suitability Index equation:\*\*
+**Habitat Suitability Index equation:**
 
 
 
@@ -218,7 +218,7 @@ HSI = (w1 × BIO1) + (w2 × BIO12) + (w3 × BIO15) + (w4 × Elevation) + (w5 × 
 
 
 
-\*\*Assigned weights\*\*
+**Assigned weights**
 
 
 
@@ -246,7 +246,7 @@ The weighted overlay produced:
 
 
 
-\*\*HabitatSuitability\_raw.tif\*\*
+**HabitatSuitability\_raw.tif**
 
 
 
@@ -254,7 +254,7 @@ The weighted overlay produced:
 
 
 
-\## 8. Final Raster Normalisation
+## 8. Final Raster Normalisation
 
 
 
@@ -262,7 +262,7 @@ The composite raster was rescaled to a \*\*0–1 range\*\* to standardise interp
 
 
 
-\*\*Output:\*\*  
+**Output:**  
 
 `HabitatSuitability\_norm.tif`
 
@@ -272,7 +272,7 @@ The composite raster was rescaled to a \*\*0–1 range\*\* to standardise interp
 
 
 
-\## 9. Final Classification
+## 9. Final Classification
 
 
 
@@ -280,17 +280,17 @@ The normalized raster was classified into four categories:
 
 
 
-\- Very Low Suitability  
+- Very Low Suitability  
 
-\- Low Suitability  
+- Low Suitability  
 
-\- Moderate Suitability  
+- Moderate Suitability  
 
-\- High Suitability  
+- High Suitability  
 
 
 
-\*\*Output:\*\*  
+**Output:**  
 
 `HabitatSuitability\_classes.tif`
 
@@ -300,7 +300,7 @@ The normalized raster was classified into four categories:
 
 
 
-\## 10. Clipping to Study Boundary
+## 10. Clipping to Study Boundary
 
 
 
@@ -312,7 +312,7 @@ The final classified raster was clipped to the study area polygon to remove valu
 
 
 
-\## 11. Cartographic Map Preparation
+## 11. Cartographic Map Preparation
 
 
 
@@ -320,45 +320,29 @@ Final layout created in QGIS Layout Manager included:
 
 
 
-\- Suitability raster
+- Suitability raster
 
-\- Study area boundary
+- Study area boundary
 
-\- Legend
+- Legend
 
-\- North arrow
+- North arrow
 
-\- Scale bar
+- Scale bar
 
-\- Projection information
+- Projection information
 
-\- Data source attribution
-
-
-
-\*\*Export settings\*\*
+- Data source attribution
 
 
 
-\- Resolution: 300 dpi  
-
-\- Formats: PNG and PDF  
+**Export settings**
 
 
 
----
+- Resolution: 300 dpi  
 
-
-
-\## 12. Software Used
-
-
-
-\- Google Earth Engine — dataset acquisition and preprocessing  
-
-\- QGIS — raster processing and modelling  
-
-\- R — raster inspection and verification  
+- Formats: PNG and PDF  
 
 
 
@@ -366,17 +350,15 @@ Final layout created in QGIS Layout Manager included:
 
 
 
-\## 13. Model Limitations
+## 12. Software Used
 
 
 
-\- No species occurrence records were used  
+- Google Earth Engine — dataset acquisition and preprocessing  
 
-\- Suitability thresholds were expert-defined  
+- QGIS — raster processing and modelling  
 
-\- Model represents environmental suitability only, not actual species presence  
-
-\- No temporal variability considered  
+- R — raster inspection and verification  
 
 
 
@@ -384,11 +366,30 @@ Final layout created in QGIS Layout Manager included:
 
 
 
-\## 14. Reproducibility
+## 13. Model Limitations
+
+
+
+- No species occurrence records were used  
+
+- Suitability thresholds were expert-defined  
+
+- Model represents environmental suitability only, not actual species presence  
+
+- No temporal variability considered  
+
+
+
+---
+
+
+
+## 14. Reproducibility
 
 
 
 All datasets used are publicly available and all analyses were performed using open-source software. The workflow is fully reproducible using the provided scripts and raster inputs.
+
 
 
 
