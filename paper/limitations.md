@@ -1,14 +1,14 @@
-\# Limitations
+# Limitations
 
 
 
-\- No species occurrence data used
+- No species occurrence data used
 
-\- Expert-based thresholding
+- Expert-based thresholding
 
-\- No statistical validation
+- No statistical validation
 
-\- Hypothetical species niche assumptions
+- Hypothetical species niche assumptions
 
 
 
@@ -22,13 +22,14 @@ Additional limitations include:
 
 
 
-\- coarse spatial resolution (~1 km)
+- coarse spatial resolution (~1 km)
 
-\- global datasets may not reflect local microhabitats
+- global datasets may not reflect local microhabitats
 
-\- categorical land cover simplification
+- categorical land cover simplification
 
-\- absence of uncertainty quantification
+- absence of uncertainty quantification
+
 
 
 
