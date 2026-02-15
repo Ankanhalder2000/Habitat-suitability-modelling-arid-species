@@ -1,4 +1,4 @@
-\# References
+# References
 
 
 
@@ -19,6 +19,7 @@ QGIS Geographic Information System — QGIS Development Team
 
 
 Google Earth Engine — Google LLC
+
 
 
 
