@@ -42,11 +42,11 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **BIO1\_AnnualMeanTemp\_WorldClim.tif** — Annual Mean Temperature  
+- **BIO1_AnnualMeanTemp_WorldClim.tif** — Annual Mean Temperature  
 
-- **BIO12\_AnnualPrecip\_WorldClim.tif** — Annual Precipitation  
+- **BIO12_AnnualPrecip_WorldClim.tif** — Annual Precipitation  
 
-- **BIO15\_PrecipSeasonality\_WorldClim.tif** — Precipitation Seasonality  
+- **BIO15_PrecipSeasonality_WorldClim.tif** — Precipitation Seasonality  
 
 
 
@@ -54,7 +54,7 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **Elevation\_SRTM.tif** — Digital Elevation Model (SRTM)
+- **Elevation_SRTM.tif** — Digital Elevation Model (SRTM)
 
 
 
@@ -62,7 +62,7 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **LandCover\_MODIS\_2021.tif** — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
+- **LandCover_MODIS_2021.tif** — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
 
 
 
@@ -104,15 +104,15 @@ Environmental datasets were accessed and exported using Google Earth Engine.
 
 
 
-- BIO1\_AnnualMeanTemp\_WorldClim.tif  
+- BIO1_AnnualMeanTemp_WorldClim.tif  
 
-- BIO1s2\_AnnualPrecip\_WorldClim.tif  
+- BIO12_AnnualPrecip_WorldClim.tif  
 
-- BIO15\_PrecipSeasonality\_WorldClim.tif  
+- BIO15_PrecipSeasonality_WorldClim.tif  
 
-- Elevation\_SRTM.tif  
+- Elevation_SRTM.tif  
 
-- LandCover\_MODIS\_2021.tif  
+- LandCover_MODIS_2021.tif  
 
 
 
@@ -186,15 +186,15 @@ Thresholds were defined manually using ecological reasoning based on environment
 
 
 
-- BIO1\_suitability.tif  
+- BIO1_suitability.tif  
 
-- BIO12\_suitability.tif  
+- BIO12_suitability.tif  
 
-- BIO15\_suitability.tif  
+- BIO15_suitability.tif  
 
-- Elevation\_suitability.tif  
+- Elevation_suitability.tif  
 
-- LandCover\_suitability.tif  
+- LandCover_suitability.tif  
 
 
 
@@ -248,7 +248,7 @@ The weighted overlay produced:
 
 
 
-**HabitatSuitability\_raw.tif**
+**HabitatSuitability_raw.tif**
 
 
 
@@ -260,13 +260,13 @@ The weighted overlay produced:
 
 
 
-The composite raster was rescaled to a \*\*0–1 range\*\* to standardise interpretation.
+The composite raster was rescaled to a **0–1 range** to standardise interpretation.
 
 
 
 **Output:**  
 
-`HabitatSuitability\_norm.tif`
+`HabitatSuitability_norm.tif`
 
 
 
@@ -294,7 +294,7 @@ The normalized raster was classified into four categories:
 
 **Output:**  
 
-`HabitatSuitability\_classes.tif`
+`HabitatSuitability_classes.tif`
 
 
 
@@ -391,6 +391,8 @@ Final layout created in QGIS Layout Manager included:
 
 
 All datasets used are publicly available and all analyses were performed using open-source software. The workflow is fully reproducible using the provided scripts and raster inputs.
+
+
 
 
 
