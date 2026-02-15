@@ -84,11 +84,13 @@ Weights were assigned according to assumed ecological relevance for a hypothetic
 data_raw/              original datasets
 data_processed/        aligned and reclassified rasters
 outputs/               final model outputs
+documentations/        methodology
 gee_scripts/           Earth Engine scripts
 qgis_project/          QGIS project files
 paper/                 manuscript-style documentation
 validation/            robustness + uncertainty analysis
 workflow/              pipeline description and diagram
+maps/                  final map
 ```
 
 ---
