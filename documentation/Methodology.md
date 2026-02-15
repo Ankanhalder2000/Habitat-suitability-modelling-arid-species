@@ -42,11 +42,11 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **BIO1\_AnnualMeanTemp\_WorldClim.tif** — Annual Mean Temperature  
+- **BIO1_AnnualMeanTemp_WorldClim.tif** — Annual Mean Temperature  
 
-- **BIO12\_AnnualPrecip\_WorldClim.tif** — Annual Precipitation  
+- **BIO12_AnnualPrecip_WorldClim.tif** — Annual Precipitation  
 
-- **BIO15\_PrecipSeasonality\_WorldClim.tif** — Precipitation Seasonality  
+- **BIO15_PrecipSeasonality_WorldClim.tif** — Precipitation Seasonality  
 
 
 
@@ -54,7 +54,7 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **Elevation\_SRTM.tif** — Digital Elevation Model (SRTM)
+- **Elevation_SRTM.tif** — Digital Elevation Model (SRTM)
 
 
 
@@ -62,7 +62,7 @@ Five predictor variables were selected based on ecological relevance to habitat 
 
 
 
-- **LandCover\_MODIS\_2021.tif** — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
+- **LandCover_MODIS_2021.tif** — MODIS MCD12Q1 Land Cover (IGBP classification, Year 2021)
 
 
 
@@ -104,15 +104,15 @@ Environmental datasets were accessed and exported using Google Earth Engine.
 
 
 
-- BIO1\_AnnualMeanTemp\_WorldClim.tif  
+- BIO1_AnnualMeanTemp_WorldClim.tif  
 
-- BIO12\_AnnualPrecip\_WorldClim.tif  
+- BIO12_AnnualPrecip_WorldClim.tif  
 
-- BIO15\_PrecipSeasonality\_WorldClim.tif  
+- BIO15_PrecipSeasonality_WorldClim.tif  
 
-- Elevation\_SRTM.tif  
+- Elevation_SRTM.tif  
 
-- LandCover\_MODIS\_2021.tif  
+- LandCover_MODIS_2021.tif  
 
 
 
@@ -391,6 +391,7 @@ Final layout created in QGIS Layout Manager included:
 
 
 All datasets used are publicly available and all analyses were performed using open-source software. The workflow is fully reproducible using the provided scripts and raster inputs.
+
 
 
 
