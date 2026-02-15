@@ -1,4 +1,4 @@
-\# Predictor Correlation Assessment
+# Predictor Correlation Assessment
 
 
 
@@ -10,15 +10,15 @@ The selected predictors represent distinct environmental dimensions:
 
 
 
-\- Temperature (thermal conditions)
+- Temperature (thermal conditions)
 
-\- Precipitation (moisture availability)
+- Precipitation (moisture availability)
 
-\- Seasonality (climate variability)
+- Seasonality (climate variability)
 
-\- Elevation (topographic gradient)
+- Elevation (topographic gradient)
 
-\- Land cover (surface characteristics)
+- Land cover (surface characteristics)
 
 
 
@@ -31,6 +31,7 @@ Formal statistical correlation testing (e.g., Pearson correlation matrix or Vari
 
 
 Future validation will include quantitative multicollinearity diagnostics to ensure predictor independence.
+
 
 
 
