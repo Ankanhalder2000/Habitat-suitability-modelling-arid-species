@@ -1,4 +1,4 @@
-\# QGIS Project File
+# QGIS Project File
 
 
 
@@ -14,13 +14,14 @@ To recreate:
 
 
 
-1\. Download exported raster layers from GEE
+1. Download exported raster layers from GEE
 
-2\. Open QGIS
+2. Open QGIS
 
-3\. Load rasters
+3. Load rasters
 
-4\. Follow workflow in documentation/methodology.md
+4. Follow workflow in documentation/methodology.md
+
 
 
 
